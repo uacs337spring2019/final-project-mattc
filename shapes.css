@@ -1,0 +1,139 @@
+/*
+ * Matthew Coulombe
+ * CSC 337
+ * Homework 11
+ * shapes.css
+ * This program creates the style for the webpage shapes.html. 
+ */
+
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 18pt;
+	background-color: #222222;
+	color: white;
+}
+
+h1 {
+	font-size: 36pt;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#space {
+	position: relative;
+	width: 800px;
+	height: 500px;
+	background-color: white;
+	margin: auto;
+}
+
+#shapes{
+	display: flex;
+	justify-content: center;
+}
+
+#space .square, #space .circle, #space .triangle, #space .rectangle, #space .trapezoid{
+	position: absolute;
+}
+
+#shapes > div{
+	margin: 25px;
+}
+
+.align > div{
+	margin: auto;
+}
+
+#buttons, .align{
+	text-align: center;
+}
+
+button{
+	margin: 10px;
+}
+
+.square{
+	height: 50px;
+	width: 50px;
+	background-color: #ffd400;
+}
+
+.circle{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #ffd400;
+}
+
+.triangle{
+	width: 0px;
+	height: 0px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #ffd400;
+}
+
+.rectangle{
+	height: 50px;
+	width: 100px;
+	background-color: #ffd400;
+}
+
+.trapezoid{
+	width: 75px;
+	height: 0px;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	border-bottom: 50px solid #ffd400;
+}
+
+#colorPicker{
+	width: 150px;
+	margin: auto;
+}
+
+#red{
+	background-color: #ff0000;
+}
+
+#green{
+	background-color: #0bb919;
+}
+
+#yellow{
+	background-color: #ffd400;
+}
+
+#blue{
+	background-color: #2162f5;
+}
+
+#black{
+	background-color: #0e0e0e;
+	color: white;
+}
+
+#orange{
+	background-color: #e8971d;
+}
+
+#purple{
+	background-color: #7d35dc;
+}
+
+select{
+	background-color: #ffd400;
+}
+
+#message{
+	visibility: hidden;
+	float: right;
+}
+
+.green{
+		background-color: green;
+}
+
+.red{
+		background-color: red;
+}

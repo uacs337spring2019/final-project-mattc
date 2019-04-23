@@ -1,0 +1,25 @@
+{
+  "name": "homework-11",
+  "version": "1.0.0",
+  "description": "moveable shapes",
+  "main": "shapes_service.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uacs337spring2019/final-project-mattc.git"
+  },
+  "author": "Matthew Coulombe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uacs337spring2019/final-project-mattc/issues"
+  },
+  "homepage": "https://github.com/uacs337spring2019/final-project-mattc#readme"
+}

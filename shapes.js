@@ -381,7 +381,7 @@
 				body : JSON.stringify(message) // Send the message
 				};
 
-			let url = "http://shape1.herokuapp.com:"+process.env.port; // Call the host for the post
+			let url = "http://localhost:3000"; // Call the host for the post
 			fetch(url, fetchOptions)
 				.then(checkStatus)
 				.then(function(responseText) {
@@ -407,7 +407,7 @@
 	function getRandomCreation(){
 		// Changes the visibility of the message to hidden
 		document.getElementById("message").style.visibility = "hidden"; 
-		let url = "http://shape1.herokuapp.com:"+process.env.PORT; // Calls the server for info 
+		let url = "http://localhost:3000/"; // Calls the server for info 
 		fetch(url) 
 			.then(checkStatus) // Checks to see if the user inputed a valid state
 			.then(function(responseText) {
@@ -443,18 +443,18 @@
 
 	/** Checks to make sure there is a valid response **/
 	function checkStatus(response) {  
-        if (response.status >= 200 && response.status < 300) { // If a valid response 
-            return response.text();
-        } 
-        else if(response.status == 404){ // If the URL is not found
-        	return Promise.reject(new Error(response.status+":"+response.statusText));
-        }
-        else {  // If there is an error
-        	document.getElementById("message").style.visibility = "visible";
-        	document.getElementById("message").className = "green";
-        	document.getElementById("message").innerHTML = "Creation could not be saved"
-            return Promise.reject(new Error(response.status+":"+response.statusText)); 
-        } 
+		if (response.status >= 200 && response.status < 300) { // If a valid response 
+			return response.text();
+		} 
+		else if(response.status == 404){ // If the URL is not found
+			return Promise.reject(new Error(response.status+":"+response.statusText));
+		}
+		else {  // If there is an error
+			document.getElementById("message").style.visibility = "visible";
+			document.getElementById("message").className = "green";
+			document.getElementById("message").innerHTML = "Creation could not be saved";
+			return Promise.reject(new Error(response.status+":"+response.statusText)); 
+		} 
     }
 
 })();

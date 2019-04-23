@@ -2,6 +2,6 @@
 	"name": "shapes_service.js", 
 	"description": "Adds shapes to the page using specific colors. It can randomize shapes currently on the page, as well as clear the page of any shapes. The user can also save what they made and get a random creation that has been previously saved.",
 	"repository": "https://github.com/uacs337spring2019/final-project-mattc",
-	"logo": "https://pe-images.s3.amazonaws.com/basics/shapes/add-subtract/elliptical-shape.gif",
+	"logo": "https://rawgit.com/heroku/node-js-sample/master/public/node.svg",
 	"keywords": ["node", "express", "static"]
 }

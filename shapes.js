@@ -407,7 +407,7 @@
 	function getRandomCreation(){
 		// Changes the visibility of the message to hidden
 		document.getElementById("message").style.visibility = "hidden"; 
-		let url = "http://shape1.herokuapp.com:+"process.env.PORT; // Calls the server for info 
+		let url = "http://shape1.herokuapp.com:"+process.env.PORT; // Calls the server for info 
 		fetch(url) 
 			.then(checkStatus) // Checks to see if the user inputed a valid state
 			.then(function(responseText) {

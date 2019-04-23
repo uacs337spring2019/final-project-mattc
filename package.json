@@ -6,7 +6,7 @@
 	    "npm": "6.4.1"
   },
   "description": "moveable shapes",
-  "main": "shapes_service.js",
+  "main": "shapes.html",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",

@@ -381,7 +381,7 @@
 				body : JSON.stringify(message) // Send the message
 				};
 
-			let url = "http://localhost:3000"; // Call the host for the post
+			let url = "https://moveableshapes.herokuapp.com:"+process.env.PORT; // Call the host for the post
 			fetch(url, fetchOptions)
 				.then(checkStatus)
 				.then(function(responseText) {
@@ -407,7 +407,7 @@
 	function getRandomCreation(){
 		// Changes the visibility of the message to hidden
 		document.getElementById("message").style.visibility = "hidden"; 
-		let url = "http://localhost:3000/"; // Calls the server for info 
+		let url = "https://moveableshapes.herokuapp.com:"+process.env.PORT; // Calls the server for info 
 		fetch(url) 
 			.then(checkStatus) // Checks to see if the user inputed a valid state
 			.then(function(responseText) {

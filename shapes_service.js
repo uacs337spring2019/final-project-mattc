@@ -18,6 +18,7 @@ const fs = require("fs");
 const  bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 
+app.use(express.static('public'));
 
 /** Prevents CORS error **/
 app.use(function(req, res, next) {
